@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.56">
+
+        <Button
+            android:text="Settings"
+            android:id="@+id/settingsBtn"
+            android:background="@drawable/default_menu_state"
+            android:textColor="@color/backgroundColor"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="@string/copyright"
+            android:textColor="@color/shareFilesColour" />
+
+        <Button
+            android:text="Send Feedback"
+            android:id="@+id/sendFeedbackBtn"
+            android:background="@drawable/default_menu_state"
+            android:textColor="@color/backgroundColor"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/settingsBtn"
+            android:layout_alignLeft="@+id/settingsBtn"
+            android:layout_alignStart="@+id/settingsBtn"
+            android:layout_marginTop="27dp" />
+
+        <Button
+            android:text="About"
+            android:id="@+id/aboutBtn"
+            android:background="@drawable/default_menu_state"
+            android:textColor="@color/backgroundColor"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/sendFeedbackBtn"
+            android:layout_alignLeft="@+id/sendFeedbackBtn"
+            android:layout_alignStart="@+id/sendFeedbackBtn"
+            android:layout_marginTop="27dp" />
+
+    </RelativeLayout>
+</LinearLayout>

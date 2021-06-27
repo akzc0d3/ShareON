@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"><![CDATA[>
+
+        ]]>
+
+        <Button
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@color/confirmColour"
+            android:text="@string/connect_peer_button"
+            android:textColor="@color/shareFilesColour" />
+
+        <Button
+            android:id="@+id/btn_start_client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_file_button"
+            android:visibility="gone"
+            android:background="@color/confirmColour" />
+
+        <Button
+            android:id="@+id/btn_disconnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/disconnectColour"
+            android:text="@string/disconnect_peer_button"
+            android:textColor="@color/shareFilesColour" />
+
+        <TextView
+            android:id="@+id/device_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light"
+            android:textColorLink="@color/toolbarColor" />
+
+        <TextView
+            android:id="@+id/device_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_light" />
+        <TextView
+            android:id="@+id/group_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/confirmColour" />
+        <TextView
+            android:id="@+id/group_ip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/confirmColour" />
+
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/background_light"></TextView>
+
+        <TextView
+            android:id="@+id/compressionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:textColor="@color/confirmColour"></TextView>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:progressBackgroundTint="@color/confirmColour"
+            android:progressDrawable="@color/confirmColour"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</FrameLayout>
